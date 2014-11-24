@@ -1,0 +1,43 @@
+Dyanamic display of scatterplots in Shiny Using airquality, trees and DNase R Datasets
+========================================================
+author: Cowpea
+
+
+Exploratory Data Analysis (EDA)
+========================================================
+
+EDA is an approach to data analysis for summarizing and visualizing the important characteristics of a data set.Focuses on exploring data in order to understand the data's 
+- underlying structure and variables, 
+- to develop intuition about the data set, 
+- consider how that data set came into existence, and 
+- decide how it can be investigated with more formal statistical methods.
+
+
+Exploratory Data Analysis (EDA) 
+========================================================
+- which comes before formal hypothesis testing and modeling
+- makes use of visual methods to analyze and summarize data sets. - R will be our tool for generating those visuals and conducting analyses
+
+
+Exploratory Data Analysis (EDA) using Shiny
+========================================================
+- Shiny is a new package from RStudio 
+- makes it easy to build interactive web applications with R.
+- Can be used to build interactive EDA applications to be viewed on the web
+
+Example of exploratory data analysis that can be displayed on the web
+================
+
+```r
+library(ggplot2)
+trees_girth = ggplot(trees, aes(Girth,Height))
+trees_girth + layer(geom="point") 
+```
+
+![plot of chunk unnamed-chunk-1](Present-figure/unnamed-chunk-11.png) 
+
+```r
+trees_girth + layer(geom="point") + layer(geom="smooth")
+```
+
+![plot of chunk unnamed-chunk-1](Present-figure/unnamed-chunk-12.png) 
